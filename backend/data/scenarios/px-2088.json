@@ -1,0 +1,8 @@
+{
+  "patientId": "PX-2088",
+  "name": "Rahul Mehta",
+  "age": 47,
+  "condition": "Type 2 Diabetes",
+  "medication": "Medication-B",
+  "scenario": "routine_disruption"
+}

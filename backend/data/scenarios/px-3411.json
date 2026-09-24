@@ -1,0 +1,8 @@
+{
+  "patientId": "PX-3411",
+  "name": "Meera Nair",
+  "age": 61,
+  "condition": "Hypertension",
+  "medication": "Medication-C",
+  "scenario": "access_barrier"
+}

@@ -1,0 +1,8 @@
+{
+  "patientId": "PX-1042",
+  "name": "Priya Sharma",
+  "age": 54,
+  "condition": "Hypertension",
+  "medication": "Medication-A",
+  "scenario": "possible_adr"
+}

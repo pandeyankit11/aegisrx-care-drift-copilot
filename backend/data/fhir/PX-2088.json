@@ -1,0 +1,73 @@
+{
+  "patientId": "PX-2088",
+  "asOfDate": "2026-08-25",
+  "scenario": "routine_disruption",
+  "resources": [
+    {
+      "resourceType": "Patient",
+      "id": "PX-2088",
+      "name": [{ "text": "Rahul Mehta" }],
+      "gender": "male",
+      "birthDate": "1979-11-08"
+    },
+    {
+      "resourceType": "Condition",
+      "id": "cond-px2088",
+      "subject": { "reference": "Patient/PX-2088" },
+      "code": { "text": "Type 2 Diabetes" }
+    },
+    {
+      "resourceType": "MedicationRequest",
+      "id": "rx-px2088",
+      "subject": { "reference": "Patient/PX-2088" },
+      "medicationReference": { "reference": "Medication/Medication-B" },
+      "authoredOn": "2026-07-01"
+    },
+    {
+      "resourceType": "MedicationDispense",
+      "id": "disp-px2088-1",
+      "subject": { "reference": "Patient/PX-2088" },
+      "whenHandedOver": "2026-07-01",
+      "daysSupply": 30
+    },
+    {
+      "resourceType": "MedicationDispense",
+      "id": "disp-px2088-2",
+      "subject": { "reference": "Patient/PX-2088" },
+      "whenHandedOver": "2026-08-06",
+      "daysSupply": 30
+    },
+    {
+      "resourceType": "Observation",
+      "id": "hr-px2088-base",
+      "subject": { "reference": "Patient/PX-2088" },
+      "code": { "text": "Resting heart rate" },
+      "effectiveDateTime": "2026-07-20",
+      "valueQuantity": { "value": 70, "unit": "bpm" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "hr-px2088-late",
+      "subject": { "reference": "Patient/PX-2088" },
+      "code": { "text": "Resting heart rate" },
+      "effectiveDateTime": "2026-08-22",
+      "valueQuantity": { "value": 72, "unit": "bpm" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "sleep-px2088-base",
+      "subject": { "reference": "Patient/PX-2088" },
+      "code": { "text": "Sleep fragmentation index" },
+      "effectiveDateTime": "2026-07-20",
+      "valueQuantity": { "value": 5.0, "unit": "index" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "sleep-px2088-late",
+      "subject": { "reference": "Patient/PX-2088" },
+      "code": { "text": "Sleep fragmentation index" },
+      "effectiveDateTime": "2026-08-22",
+      "valueQuantity": { "value": 5.5, "unit": "index" }
+    }
+  ]
+}
