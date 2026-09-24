@@ -1,0 +1,82 @@
+{
+  "patientId": "PX-3411",
+  "asOfDate": "2026-08-25",
+  "scenario": "access_barrier",
+  "resources": [
+    {
+      "resourceType": "Patient",
+      "id": "PX-3411",
+      "name": [{ "text": "Meera Nair" }],
+      "gender": "female",
+      "birthDate": "1965-02-21"
+    },
+    {
+      "resourceType": "Condition",
+      "id": "cond-px3411",
+      "subject": { "reference": "Patient/PX-3411" },
+      "code": { "text": "Hypertension" }
+    },
+    {
+      "resourceType": "MedicationRequest",
+      "id": "rx-px3411",
+      "subject": { "reference": "Patient/PX-3411" },
+      "medicationReference": { "reference": "Medication/Medication-C" },
+      "authoredOn": "2026-07-01"
+    },
+    {
+      "resourceType": "MedicationDispense",
+      "id": "disp-px3411-1",
+      "subject": { "reference": "Patient/PX-3411" },
+      "whenHandedOver": "2026-07-01",
+      "daysSupply": 30
+    },
+    {
+      "resourceType": "Observation",
+      "id": "cost-px3411",
+      "subject": { "reference": "Patient/PX-3411" },
+      "code": { "text": "Medication acquisition cost proxy" },
+      "effectiveDateTime": "2026-08-20",
+      "valueQuantity": { "value": 1.45, "unit": "ratio" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "pharmacy-px3411",
+      "subject": { "reference": "Patient/PX-3411" },
+      "code": { "text": "Pharmacy changes in recent period" },
+      "effectiveDateTime": "2026-08-20",
+      "valueQuantity": { "value": 2, "unit": "changes" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "hr-px3411-base",
+      "subject": { "reference": "Patient/PX-3411" },
+      "code": { "text": "Resting heart rate" },
+      "effectiveDateTime": "2026-07-20",
+      "valueQuantity": { "value": 71, "unit": "bpm" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "hr-px3411-late",
+      "subject": { "reference": "Patient/PX-3411" },
+      "code": { "text": "Resting heart rate" },
+      "effectiveDateTime": "2026-08-22",
+      "valueQuantity": { "value": 72, "unit": "bpm" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "sleep-px3411-base",
+      "subject": { "reference": "Patient/PX-3411" },
+      "code": { "text": "Sleep fragmentation index" },
+      "effectiveDateTime": "2026-07-20",
+      "valueQuantity": { "value": 5.1, "unit": "index" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "sleep-px3411-late",
+      "subject": { "reference": "Patient/PX-3411" },
+      "code": { "text": "Sleep fragmentation index" },
+      "effectiveDateTime": "2026-08-22",
+      "valueQuantity": { "value": 5.4, "unit": "index" }
+    }
+  ]
+}

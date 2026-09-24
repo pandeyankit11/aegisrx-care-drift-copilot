@@ -1,0 +1,26 @@
+[
+  {
+    "id": "PX-1042",
+    "name": "Priya Sharma",
+    "age": 54,
+    "condition": "Hypertension",
+    "medication": "Medication-A",
+    "scenario": "possible_adr"
+  },
+  {
+    "id": "PX-2088",
+    "name": "Rahul Mehta",
+    "age": 47,
+    "condition": "Type 2 Diabetes",
+    "medication": "Medication-B",
+    "scenario": "routine_disruption"
+  },
+  {
+    "id": "PX-3411",
+    "name": "Meera Nair",
+    "age": 61,
+    "condition": "Hypertension",
+    "medication": "Medication-C",
+    "scenario": "access_barrier"
+  }
+]

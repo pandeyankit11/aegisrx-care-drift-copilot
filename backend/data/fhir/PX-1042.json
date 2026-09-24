@@ -1,0 +1,73 @@
+{
+  "patientId": "PX-1042",
+  "asOfDate": "2026-08-25",
+  "scenario": "possible_adr",
+  "resources": [
+    {
+      "resourceType": "Patient",
+      "id": "PX-1042",
+      "name": [{ "text": "Priya Sharma" }],
+      "gender": "female",
+      "birthDate": "1972-04-17"
+    },
+    {
+      "resourceType": "Condition",
+      "id": "cond-px1042",
+      "subject": { "reference": "Patient/PX-1042" },
+      "code": { "text": "Hypertension" }
+    },
+    {
+      "resourceType": "MedicationRequest",
+      "id": "rx-px1042",
+      "subject": { "reference": "Patient/PX-1042" },
+      "medicationReference": { "reference": "Medication/Medication-A" },
+      "authoredOn": "2026-07-01"
+    },
+    {
+      "resourceType": "MedicationDispense",
+      "id": "disp-px1042-1",
+      "subject": { "reference": "Patient/PX-1042" },
+      "whenHandedOver": "2026-07-01",
+      "daysSupply": 30
+    },
+    {
+      "resourceType": "MedicationDispense",
+      "id": "disp-px1042-2",
+      "subject": { "reference": "Patient/PX-1042" },
+      "whenHandedOver": "2026-07-15",
+      "daysSupply": 30
+    },
+    {
+      "resourceType": "Observation",
+      "id": "hr-px1042-base",
+      "subject": { "reference": "Patient/PX-1042" },
+      "code": { "text": "Resting heart rate" },
+      "effectiveDateTime": "2026-07-20",
+      "valueQuantity": { "value": 68, "unit": "bpm" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "hr-px1042-late",
+      "subject": { "reference": "Patient/PX-1042" },
+      "code": { "text": "Resting heart rate" },
+      "effectiveDateTime": "2026-08-22",
+      "valueQuantity": { "value": 79, "unit": "bpm" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "sleep-px1042-base",
+      "subject": { "reference": "Patient/PX-1042" },
+      "code": { "text": "Sleep fragmentation index" },
+      "effectiveDateTime": "2026-07-20",
+      "valueQuantity": { "value": 8.0, "unit": "index" }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "sleep-px1042-late",
+      "subject": { "reference": "Patient/PX-1042" },
+      "code": { "text": "Sleep fragmentation index" },
+      "effectiveDateTime": "2026-08-22",
+      "valueQuantity": { "value": 10.5, "unit": "index" }
+    }
+  ]
+}
